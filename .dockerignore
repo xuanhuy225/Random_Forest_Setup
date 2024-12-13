@@ -1,0 +1,17 @@
+.git
+build.xml
+build.gradle
+README.md
+src
+manifest.mf
+libs
+admin
+server
+!server/conf
+!admin/conf
+domain
+infrastructure
+gradle
+gradlew
+gradlew.bat
+settings.gradle

@@ -1,0 +1,8 @@
+rootProject.name = 'random-forest-setup'
+include 'common'
+include 'domain'
+include 'infrastructure'
+include 'server'
+include 'admin'
+include 'shared-config'
+

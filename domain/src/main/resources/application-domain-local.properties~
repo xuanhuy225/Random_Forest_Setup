@@ -1,0 +1,70 @@
+spring.config.import=application-domain.properties
+
+fin.ai-ekyc.dico-ai-ekyc-api-key=aFNHOiH0g5J8umFKAPk8IEkwSyZiF0JL
+fin.ai-ekyc.endpoint=https://api.zalo.ai/ekyc/v2/prod
+fin.ai-ekyc.retry-times=5
+fin.ai-ekyc.proxy-host=
+fin.ai-ekyc.proxy-port=
+
+# static rsync info
+upload.static-internal.resource.internal.prefixes=https://dev-tpb.fiza.ai/client/api/v2/static-image/,https://dev-tpb.fiza.app/client/api/v2/static-image/,https://dev-tpb.fiza.app/api/static-image/,https://sandbox-tpb.fiza.app/api/static-image/
+upload.static-internal.resource.public.replace.prefix=data/fiza/internal-static/
+upload.static-internal.resource.prefix=data/fiza/internal-static
+upload.static.resource.prefix=https://dev-tpb.fiza.app/api/static-image/
+upload.rsync.module=10.60.64.216::stc-fin.zdn.vn
+upload.static-public.resource.prefix=https://stc-fin.zdn.vn
+upload.private.rsync.module=/Users/anhnd/Data/Zalo/oaproject/fiza/partner-miniapp/bfsi-miniapp/data/fiza/internal-static
+upload.logo.remote.dir=/fin/stg/bfsi/logo
+upload.image.remote.dir=/fin/stg/bfsi/image
+
+
+
+# Dico
+fin.loan.dico.url=https://sandboxapi.tpb.vn:9303/tpb/public
+fin.loan.dico.auth-path=/api/oauth2/token
+fin.loan.dico.create-order-path=/appgwsls/v2/cashloan/createorder
+fin.loan.dico.order-status-path=/appgwsls/v2/3p/orderStatusInquiry
+fin.loan.dico.request-or-id=FIZA
+fin.loan.dico.auth-grant-type=client_credentials
+fin.loan.dico.auth-scope=account
+fin.loan.dico.auth-client-id: d9bb5e738870ee8297179bd5e2ddab09
+fin.loan.dico.auth-client-secret: 13d940b41c4e506fcc23ce21b990b3f1
+fin.loan.dico.channel-code: FIZA
+fin.loan.dico.sales-org-code=TPB001
+fin.loan.dico.product-code1: FIZA_SHORTAPP_1
+fin.loan.dico.product-code2: FIZA_SHORTAPP_2
+fin.loan.dico.product-version=1
+fin.loan.dico.product-top-org=TPB001
+fin.loan.dico.product-id=707
+fin.loan.dico.product-name=Vay
+fin.loan.dico.status-inquiry-secret-key: 3p@TPbank@02#
+fin.loan.dico.status-inquiry-version=3.0
+
+fin.card.dico.url=https://sandboxapi.tpb.vn:9303/tpb/public
+fin.card.dico.auth-path=/api/oauth2/token2
+fin.card.dico.create-order-path=/fizacard/forwarder-presentation-service/v1/forward
+fin.card.dico.get-data-path=/fizacard/forwarder-presentation-service/v1/forward
+fin.card.dico.auth-esign-path=/fizacard/forwarder-presentation-service/v1/forward
+fin.card.dico.request-esign-path=/fizacard/forwarder-presentation-service/v1/forward
+fin.card.dico.auth-grant-type=client_credentials
+fin.card.dico.auth-scope=payment
+fin.card.dico.auth-client-id=de4445bd2441eae78d51c42154c7f3fc
+fin.card.dico.auth-client-secret=11ed984836097ca5586c34036e3d27f6
+fin.card.dico.username=OPENAPI
+fin.card.dico.secret-key=292cf2184dac080ff1f610fa62221496
+fin.card.dico.create-order-api-id=IC_FIZA_GMT_OPEN_CARD
+fin.card.dico.metadata-api-id=METADATA
+fin.card.dico.request-otp-api-id=IC_FIZA_ISSUEDCARD_INFO
+fin.card.dico.request-esign-api-id=IC_FIZA_DIGITAL_SIGNATURE
+fin.card.dico.order-status-api-id=IC_FIZA_INQUIRY_OPEN_CARD_RESULT
+fin.card.dico.otp-redirect-url=https://zalo.me/s/2664733829644071336/dico/card/callback?env=TESTING
+
+
+#Card
+fin.card.tpbank.secret-key = 69d40b4b7f81c0bc438d28ea3839824f074ef35e43023f6fa10bf522d9679591
+fin.card.tpbank.partner-key = FEOjEDYnirW68NMzkEhUTWxyFHXMJnVz
+fin.card.tpbank.partner-hash-key = 644rOt9FJogrMdts5D3q8Jo2lWG6m97n
+fin.card.tpbank.rsa-public-key = MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQuyNxtKgRoPCG7nRknB20FH59qd0aGA55HyuNhtMvp6NC+Z0Nf+b1lIU/VVR/i3eWy6rDlAC3dmh5jB++KjyICN0mr2lhHZjZ2qhWXE9sBQq2SexraljzJCxguLgB3x20Rs7zJ9udIX3EtuWnMgDqsuRc4fUnEjXpH8iJi0WnIQIDAQAB
+fin.card.tpbank.rsa-private-key = MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJC7I3G0qBGg8IbudGScHbQUfn2p3RoYDnkfK42G0y+no0L5nQ1/5vWUhT9VVH+Ld5bLqsOUALd2aHmMH74qPIgI3SavaWEdmNnaqFZcT2wFCrZJ7GtqWPMkLGC4uAHfHbRGzvMn250hfcS25acyAOqy5Fzh9ScSNekfyImLRachAgMBAAECgYAVUdvYxhnz7tc/qSSwJWcivdocPMd7LowDP5o00OWPIYylMwv1jx/AkU5HlBRMbYkCR6IyCT1JyUF+liue4a3ky0MCtOS5InpE+TH3/08Ogc7o8AJoO9oZU48LDkTdmNxMlJAidjj3Xaphsqz8JcpR3fIZHri3tSunSKSShS3aWQJBAM3bjV+F3AnfskkvDZR8lf2XMCzfiB1zLX113ZCcMnDcornsCpoM4EQkpsPxZLRYoFehTj/R5luO3/7d1c+pcw8CQQCz+/peYebJ6hFBNPGOn7cWNeCer28Kb5QtuvNzNVLb08c5tWCQDNpIRfz8e3ooNKFTrcnTQJ9v3iCCWI9N7ILPAkEAosl4rU4cZ852nPrRgVdYAPY6yXFmoOtA0NKRCFcMaEWBhQbMh2+hNSHKom5UlWz0Nve++ibRRBvitBfWiWXVLwJAcwMnB576ErcPVaLWZXRsU7YUFnM2uu14PAzGOy2tCCp5mcfsr8B20E5hDpp9Aio3mThpyyP1fk/saD7dPEdRgwJAXFF+LuGmGMUC0X484754hfRbrCrQWlnIACanJc4jvvHbCMRViOgEKS/r88FbyxMckRw18KQLHXi8RKxIycai2w==
+
+miniapp.zaloapp.app-id=3945277602360654633
